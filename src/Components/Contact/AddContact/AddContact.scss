@@ -1,0 +1,48 @@
+.form {
+    min-height: 100vh;
+    color: #efefef;
+    background-color: #252525;
+
+    &-box {
+        width: 50%;
+        margin: 1rem auto;
+        padding: 2rem;
+        border-radius: .5rem;
+        text-align: center;
+        box-shadow: 0px 2px 5px #000;
+
+        input {
+            margin: 2rem 0;
+            width: 100%;
+            height: 45px;
+            border: none;
+            outline: none;
+            padding-left: .5rem;
+            border-radius: .5rem;
+            background-color: #efefef;
+        }
+
+        &__btn {
+            width: 150px;
+            height: 40px;
+            border-radius: .5rem;
+            background-color: #0fca08;
+            border: 4px solid transparent;
+            transition: all .4s ease-in;
+            color: #efefef;
+            font-size: 1.3rem;
+
+
+            &:hover {
+                background-color: #252525;
+                border-bottom: 4px solid #0fca08;
+                border-top: 4px solid #0fca08;
+                transition: all .4s ease-in;
+            }
+        }
+
+        @media screen and (max-width : 998px) {
+            width: 100%;
+        }
+    }
+}
